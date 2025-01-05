@@ -9,8 +9,8 @@ slug : string
    }
 }
 
-const Fullpage = async ( params:Params) => {
-const {slug} = params.params;
+const Fullpage = async ({params}:Params) => {
+const {slug} = params;
 const data:Blog = await client.fetch(`*[_type == "blog" && slug.current == $slug]{
   heading,
     description,
