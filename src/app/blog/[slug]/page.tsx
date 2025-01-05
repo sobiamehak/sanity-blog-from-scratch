@@ -3,14 +3,13 @@ import Image from 'next/image'
 import { client } from '@/sanity/lib/client'
 import { Blog } from '@/app/page';
 import Comments from '../../comments/page';
-interface Params {
+interface PageProp {
  params:{
 slug : string
    }
 }
-
-const Fullpage = async ({params}:Params) => {
-const {slug} = params;
+const Fullpage = async({params}:PageProp) => {
+const slug = params.slug;
 const data:Blog = await client.fetch(`*[_type == "blog" && slug.current == $slug]{
   heading,
     description,
