@@ -1,40 +1,3 @@
-
-//  import Comments from '../../comments/page';
-
-
-
-
-//  const Fullpage = async (params:Params) => {
-//  const {slug} = params.params;
-//  const data:Blog = await client.fetch(`*[_type == "blog" && slug.current == $slug]{
-//   heading,
-//     description,
-//     "slug": slug.current,
-//      "imageUrl": image.asset->url
-//  }[0]`,{slug})
-
-//    return (
-//     <main>
-//      <div>       <Image className='rounded-md mt-10 mg:ml-[100px] lg:ml-[300px] h-[200px] w-[400px] lg:w-[600px] lg:h-[300px]'
-//        src={data.imageUrl}
-//          alt={data.heading}  height={600} width={600}/>
-//        <div>
-//         <h1 className='text-3xl font-bold my-8 '>
-//  {data.heading}
-//          </h1>
-//          <p>
-// {data.description}        </p>
-//       </div>
-//      </div>
-   
-//  <Comments/>
-
-  
-//      </main>
-//    )
-//  }
-
-//  export default Fullpage 
 "use client";
 
 import React, { useEffect, useState } from "react";
@@ -109,7 +72,7 @@ const unwraped = React.use(params)
         </div>
       </div>
       )}
-    </div>
+    </div> 
   );
 }
 
