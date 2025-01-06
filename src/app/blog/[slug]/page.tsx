@@ -45,12 +45,12 @@ const unwraped = React.use(params)
     <div>
       {fetchdata ? (
         <>
-         <main>
+         <main className="bg-white font-sans">
      <div>
        <Image className='rounded-md mt-10 mg:ml-[100px] lg:ml-[300px] h-[200px] w-[400px] lg:w-[600px] lg:h-[300px]'
        src={fetchdata.imageUrl}
          alt={fetchdata.heading}  height={600} width={600}/>
-       <div>
+       <div className="max-w-screen-lg mx-auto bg-slate-200 rounded-lg p-10 mt-10 ">
         <h1 className='text-3xl font-bold my-8 '>
  {fetchdata.heading}
          </h1>
@@ -77,4 +77,3 @@ const unwraped = React.use(params)
 }
 
 export default Page;
-
