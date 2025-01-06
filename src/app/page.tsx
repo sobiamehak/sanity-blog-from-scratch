@@ -3,11 +3,12 @@ import { client } from "@/sanity/lib/client";
 import Image from "next/image";
 import Link from "next/link";
 
-export interface Blog {
+  export interface Blog {
   heading: string;
   description: string;
   slug: string;
   imageUrl: string;
+  
 }
 
 export default async function Home() {
